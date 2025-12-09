@@ -1,0 +1,204 @@
+h1{
+    font-size: 75px;
+    color: #ffffff;
+    text-shadow: 0 0 20px rgb(0, 0, 0);
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* NAV */
+nav ul {
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+/* PRINCIPAL ---------------------------------------------- */
+
+body.index{
+    background-image: url(../Imagenes/PornoYHelado2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #E56D93;
+}
+
+.sinopsis{
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: 20px;
+    max-width: 320px;
+    background: #ffffffb3;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sinopsis2{
+    margin-top: 180px;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: 20px;
+    max-width: 320px;
+    background: #ffffffb3;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* PERSONAJES ---------------------------------------------- */
+
+body.personajes{
+    background-image: url(../Imagenes/NotasMusicales.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #E56D93;
+}
+
+.Personajes img{
+    border: 3px solid black;
+    width: 200px;
+    height: auto;
+}
+
+.Personajes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 10px;
+    gap: 20px;
+}
+
+.Descripcion{
+    max-width: 50%;
+    text-align: center;
+    font-size: 18px;
+    background: #ffffffb3;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* HITS ---------------------------------------------- */
+
+body.hits{
+    background-image: url(../Imagenes/BochasDeHelado.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.hits h2{
+    color: #ffffff;
+    text-shadow: 0 0 20px rgb(0, 0, 0);
+    text-align: center;
+}
+
+.Videos1,
+.Videos2{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.Video{
+    text-align: center;
+}
+
+
+/* =======================================================
+   RESPONSIVE TABLET
+======================================================= */
+
+@media (max-width: 1024px) {
+
+    h1 {
+        font-size: 55px;
+    }
+
+    .Descripcion{
+        max-width: 70%;
+        font-size: 16px;
+    }
+
+    .Personajes img{
+        width: 160px;
+    }
+
+    .sinopsis, .sinopsis2 {
+        margin-right: 10px;
+        max-width: 280px;
+    }
+}
+
+/* =======================================================
+   RESPONSIVE CELULAR
+======================================================= */
+
+@media (max-width: 768px) {
+
+    h1{
+        font-size: 45px;
+    }
+
+    /* NAV en columna */
+    nav ul li {
+        width: 80px;
+        height: 28px;
+    }
+
+    /* INDEX */
+    .sinopsis, .sinopsis2{
+        margin: 20px auto;
+        max-width: 90%;
+        font-size: 16px;
+    }
+
+    .sinopsis2{
+        margin-top: 20px;
+    }
+
+    body.index{
+        background-size: cover;
+        background-position: top;
+    }
+
+    /* PERSONAJES */
+    .Personajes{
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    .Personajes img{
+        width: 70%;
+        height: auto;
+    }
+
+    .Descripcion{
+        max-width: 90%;
+        margin: 10px auto;
+        font-size: 16px;
+    }
+
+    /* VIDEOS */
+    iframe{
+        width: 90%;
+        height: auto;
+    }
+}
